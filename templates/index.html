@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container mx-0 mx-sm-auto card card-header bg-dark mt-5">
+        <h1 class="text-warning">Dojo Survey</h1>
+        <form action="/dashboard" method="post">
+            <label for="your_name" class="text-bg-dark mb-3">Your Name:</label>
+            <input type="text" name="your_name"  class="form-control text-bg-light p-1 mb-3">
+            <p  class="text-bg-dark mb-3">Dojo Locations:
+                <select name="location" class="form-select text-bg-light p-1 ">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Washington DC">Washington DC</option>
+                    <option value="Seattle WA">Seattle WA</option>
+                    <option value="California">California</option>
+                    <option value="Boston">Boston</option>
+                    <option value="Miami">Miami</option>
+                    <option value="Ney York">Ney York</option>
+                </select>
+            </p>
+            <p class="text-bg-dark mb-3">Favorite Language:
+                <select name="language" class="form-select text-bg-light p-1">
+                    <option value="Python">Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Nodejs">Nodejs</option>
+                    <option value="Java">Java</option>
+                </select>
+            </p>
+            <p class="text-bg-dark mb-3">Comment (optional):
+            </p>
+            <textarea name="comment" class="form-control text-bg-light p-1"></textarea><br>
+            <input type="submit" value="Button" class="btn btn-secondary">
+        </form>
+    </div>
+</body>
+
+</html>
